@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.arrow::after {
+	content: '>';
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #AEA1A1;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 8px;
+	font-stretch: ultra-expanded;
+	transform: rotate(90deg);
+}
+
+img {
+	user-select: none;
+	pointer-events: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.header {
+	height: 134px;
+	background-color: #edf2ec;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Inika", serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.header .wrapper {
+	width: 1220px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header_logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 90px;
+}
+
+.header_logo img {
+	position: absolute;
+	left: 0;
+	top: -6px;
+}
+
+.header_menu {
+	width: 452px;
+	height: 50px;
+}
+
+.header_list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	line-height: 50px;
+}
+
+.header_red {
+	font-weight: 700;
+	color: #e06733;
+}
+
+.header_link {
+	transition: 0.3s;
+}
+
+.header_link:hover {
+	color: #e06733;
+}
+
+.welcome {
+	background-color: #edf2ec;
+	height: 532px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.welcome .wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 1440px;
+	align-items: center;
+}
+
+button {
+	text-transform: uppercase;
+	width: 158px;
+	height: 44px;
+	cursor: pointer;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	border: 2px solid #e06733;
+	border-radius: 10px;
+	color: #000;
+	transition: 0.3s;
+	background: none;
+	user-select: none;
+}
+
+button:hover {
+	background: #e06733;
+	border: 2px solid #e06733;
+	border-radius: 10px;
+	color: #fff;
+}
+
+.Plants {
+	color: #499a18;
+}
+
+.welcome_main h1 {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 50px;
+	color: #717171;
+}
+
+.welcome_main {
+	display: flex;
+	flex-direction: column;
+	width: 547px;
+	height: 339px;
+	justify-content: space-between;
+}
+
+.welcome img {
+	width: 448.8px;
+	height: 407.36px;
+}
+
+.welocme_text {
+	width: 525.44px;
+	height: 105px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 35px;
+	color: #636060;
+}
+
+.welcome_main button {
+	margin-top: 5px;
+}
+
+.about {
+	background-color: #fff;
+	height: 666px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about .wrapper {
+	width: 1377px;
+	height: 479px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.about_plant {
+	background-image: url("img/houseplant.png");
+	width: 464px;
+	height: 479px;
+	background-size: cover;
+	background-position: center;
+}
+
+.about_main {
+	width: 605px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.about_main h2 {
+	color: #e06733;
+	width: 463px;
+	height: 102px;
+	font-family: "Inika";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+	margin-top: 3px;
+}
+
+.about_text {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	color: #636060;
+	margin-top: 40px;
+}
+
+.service {
+	height: 1300px;
+	background-color: #edf2ec;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card {
+	width: 330px;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+}
+.card_img {
+	height: 350px;
+	width: 100%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	object-fit: cover;
+}
+.card_text {
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	height: 100px;
+	width: 330px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+	flex-direction: column;
+	gap: 1rem;
+}
+.card_text p {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #717171;
+}
+.card_text h3 {
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 20px;
+	color: #e06733;
+}
+.service_content {
+	display: grid;
+	grid-template-columns: repeat(3, 330px);
+	grid-column-gap: 116px;
+	grid-row-gap: 55px;
+	margin-top: 40px;
+}
+.service_top {
+	width: 1007px;
+	height: 185px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.service .wrapper {
+	padding: 0 108px;
+	height: 100%;
+	display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+    
+}
+.service_top .btn_group {
+	width: 558px;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.service_top h2 {
+	font-family: "Inika";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 52px;
+	color: #499a18;
+}
+.service_top .btn_group button {
+	border: 1px solid #e06733;
+	font-family: "Inika";
+	font-style: normal;
+	font-weight: 400;
+	color: #e06733;
+	border-radius: 5px;
+	width: 161px;
+	height: 50px;
+	margin-top: 2px;
+	font-size: 20px;
+	line-height: 26px;
+	text-transform: none;
+}
+.service_top .btn_group button:hover {
+	color: #fff;
+}
